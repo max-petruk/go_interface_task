@@ -10,7 +10,8 @@ func main() {
 		cat{name: "Cat", weight: 7},
 		dog{name: "Dog", weight:15},
 	}
-	totalFeedIntake(sliceOfAnimals)
+	fmt.Printf("The total amound of feed for all the animals is %v kg\n", totalFeedIntake(sliceOfAnimals))
+	// totalFeedIntake(sliceOfAnimals)
 }
 
 
@@ -82,13 +83,14 @@ func printFeedIntake(a animal) {
 	fmt.Printf("Our %v is %v kg and consumes %v kg of feed per month\n", a.getName(), a.getWeight(), a.feedIntake())
 }
 
-func totalFeedIntake(animals []animal) {
+func totalFeedIntake(animals []animal) float32 {
 	var total float32
 	for _, a := range animals {
 		printFeedIntake(a)
 		total = total + a.feedIntake()
 	}
-	fmt.Printf("The total amound of feed for all the animals is %v kg\n", total)
+	return total
+	// fmt.Printf("The total amound of feed for all the animals is %v kg\n", total)
 }
 
 
