@@ -78,14 +78,14 @@ func (d dog) getWeight() float32 {
 }
 
 
-func feedIntakeforOneAnimal(a animal) {
+func printFeedIntake(a animal) {
 	fmt.Printf("Our %v is %v kg and consumes %v kg of feed per month\n", a.getName(), a.getWeight(), a.feedIntake())
 }
 
 func totalFeedIntake(animals []animal) {
 	var total float32
 	for _, a := range animals {
-		feedIntakeforOneAnimal(a)
+		printFeedIntake(a)
 		total = total + a.feedIntake()
 	}
 	fmt.Printf("The total amound of feed for all the animals is %v kg\n", total)
