@@ -5,7 +5,11 @@ import (
 )
 
 func main() {
-	sliceOfAnimals := [] animal {cow{name: "Cow", weight:136}, cat{name: "Cat", weight: 7}, dog{name: "Dog", weight:15}}
+	sliceOfAnimals := [] animal {
+		cow{name: "Cow", weight:136},
+		cat{name: "Cat", weight: 7},
+		dog{name: "Dog", weight:15},
+	}
 	totalFeedIntake(sliceOfAnimals)
 }
 
