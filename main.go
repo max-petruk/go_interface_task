@@ -56,7 +56,7 @@ func (c cat) feedIntake() float32 {
 }
 
 func (d dog) feedIntake() float32 {
-	return d.weight * 10.0
+	return d.weight * 2.0
 }
 
 // returning the weight of an animal
