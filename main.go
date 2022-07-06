@@ -11,7 +11,6 @@ func main() {
 		dog{name: "Dog", weight:15},
 	}
 	fmt.Printf("The total amound of feed for all the animals is %v kg\n", totalFeedIntake(sliceOfAnimals))
-	// totalFeedIntake(sliceOfAnimals)
 }
 
 
@@ -90,7 +89,6 @@ func totalFeedIntake(animals []animal) float32 {
 		total = total + a.feedIntake()
 	}
 	return total
-	// fmt.Printf("The total amound of feed for all the animals is %v kg\n", total)
 }
 
 
